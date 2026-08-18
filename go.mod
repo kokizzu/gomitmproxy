@@ -1,3 +1,5 @@
+// Deprecated: this module is no longer supported and it will be removed in the
+// near future.
 module github.com/AdguardTeam/gomitmproxy
 
 go 1.20

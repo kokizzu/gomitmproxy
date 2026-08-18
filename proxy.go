@@ -1,4 +1,7 @@
 // Package gomitmproxy implements a configurable mitm proxy wring purely in go.
+//
+// Deprecated: this package is no longer supported and it will be removed in the
+// near future.
 package gomitmproxy
 
 import (
@@ -24,9 +27,11 @@ var errClientCertRequested = errors.New("tls: client cert authentication unsuppo
 // By default we have no timeout.
 //
 // TODO(ameshkov): rework deadlines (see #13 for example).
-const defaultTimeout = 0
-const dialTimeout = 30 * time.Second
-const tlsHandshakeTimeout = 10 * time.Second
+const (
+	defaultTimeout      = 0
+	dialTimeout         = 30 * time.Second
+	tlsHandshakeTimeout = 10 * time.Second
+)
 
 // Proxy is a structure with the proxy server configuration and current state.
 type Proxy struct {

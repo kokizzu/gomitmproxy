@@ -5,6 +5,9 @@
 
 # gomitmproxy
 
+> [!WARNING]
+> This module is deprecated. It is no longer supported and will be removed in the near future.
+
 This is a customizable HTTP proxy with TLS interception support.
 It was created as a part of [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome).
 However, it can be used for different purposes so we decided to make it a separate project.
